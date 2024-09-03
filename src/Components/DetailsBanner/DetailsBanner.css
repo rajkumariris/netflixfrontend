@@ -1,0 +1,9 @@
+.details-banner{
+    width: 100%;
+    height:500px;
+}
+.details-banner-img img{
+    width: 100%;
+     height: 450px;
+     object-fit: contain;
+}

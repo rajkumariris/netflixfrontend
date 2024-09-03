@@ -1,0 +1,28 @@
+.card{
+    width: 300px;
+    height: 500px;
+}
+.card-img{
+    position: relative;
+}
+   
+.card-img img{
+    width: 300px;
+    height: 250px;
+   
+}
+.card-title{
+    position: absolute;
+    color: white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: black ;
+    opacity: 0.5;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+}
+.overview{
+    color: white;
+}
