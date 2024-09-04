@@ -9,6 +9,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import Callback from './Callbacks/Callback';
 import MovieContext from './Context/MovieContext';
 import WatchListPage from './Pages/WatchListPage/WatchListPage';
+import NavBar from './Components/NavBar/NavBar';
 function App() {
 
   let [watchList, setWatchList] = useState(() =>{
@@ -40,10 +41,11 @@ function App() {
  console.log(watchList+"  iam watchlist")
 
   return (
-    <div className="App">
-     hello world
-      <MovieContext.Provider value={{watchList,StoretoWatchList,removeMovieList}}>
-        <BrowserRouter>
+    <div className="App"> 
+     <BrowserRouter>
+      <MovieContext.Provider value={{watchList,setWatchList,StoretoWatchList,removeMovieList}}>
+       <NavBar />
+       
         <Routes>
         
           <Route
@@ -70,8 +72,9 @@ function App() {
 
         
         </Routes>
-        </BrowserRouter>  
+       
         </MovieContext.Provider>
+        </BrowserRouter>  
     </div>
   );
 }

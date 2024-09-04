@@ -1,4 +1,8 @@
-function WatchListCard({item}){
+function WatchListCard({item,removeMovieList}){
+
+    function deleteFWatchList(){
+        removeMovieList(item);
+    }
     return (
         <div className="WatchListCard">
              <div className="WatchList-img">
@@ -10,6 +14,9 @@ function WatchListCard({item}){
             <div className="WatchList-vote">
                 {item.vote_average}
             </div>
+            <div className="watchList-card-delete" onClick={deleteFWatchList}>
+                Delete</div>
+           
         </div>
     )
 }

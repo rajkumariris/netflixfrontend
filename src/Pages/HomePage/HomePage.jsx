@@ -3,7 +3,6 @@ import Movies from '../../Components/Movies';
 function HomePage({ StoretoWatchList, watchList,removemovie}){
     return (
         <div>
-            Home page
           <Banner />
           <Movies 
             // watchList={watchList}
